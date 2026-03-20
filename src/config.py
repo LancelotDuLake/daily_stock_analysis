@@ -1448,7 +1448,7 @@ class Config:
         logging.getLogger(__name__).warning(
             f"MARKET_REVIEW_REGION 配置值 '{value}' 无效，已回退为默认值 'cn'（合法值：cn / us / both）"
         )
-        return 'cn'
+        return 'both'
 
     @classmethod
     def _parse_md2img_engine(cls, value: str) -> str:
