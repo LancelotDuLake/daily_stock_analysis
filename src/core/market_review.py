@@ -54,7 +54,7 @@ def run_market_review(
         else (getattr(config, 'market_review_region', 'cn') or 'cn')
     )
     if region not in ('cn', 'us', 'both'):
-        region = 'cn'
+        region = 'both'
 
     try:
         if region == 'both':
